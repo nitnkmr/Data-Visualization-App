@@ -42,7 +42,7 @@ function funcOne() {
 }
 function funcTwo() {
   lowerDiv.innerHTML = "";
-  graphTitle.innerText = `Top 10 Most spoken Language`;
+  graphTitle.innerText = `Top 10 Most Spoken Languages worldwide`;
   console.log("button two clicked");
   let=langArray=[];
   for (let index = 0; index < countries_data.length; index++) {
