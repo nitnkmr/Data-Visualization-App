@@ -30,7 +30,7 @@ function funcOne() {
     let percent = (sortedPopulation[i].population / totalPop) * 100;
     percentage = percent.toFixed(2);
 
-    graph.innerHTML = `<div class="name">${i+1}. ${sortedPopulation[i].name}</div>
+    graph.innerHTML = `<div class="name"> ${sortedPopulation[i].name}</div>
                          <div class="outerBar"><div class="bar" style="width: ${
                            percentage + 10
                          }%;"">${percentage}%</div></div>
@@ -42,7 +42,7 @@ function funcOne() {
 }
 function funcTwo() {
   lowerDiv.innerHTML = "";
-  graphTitle.innerText = `Top 10 countries by Language`;
+  graphTitle.innerText = `Top 10 Most spoken Language`;
   console.log("button two clicked");
   let=langArray=[];
   for (let index = 0; index < countries_data.length; index++) {
@@ -67,7 +67,7 @@ function funcTwo() {
     let percent = (sortedArray[index][1] / sortedArray.length) * 100;
     percentage = percent.toFixed(2);
 
-    graph.innerHTML = `<div class="name">${index+1}. ${sortedArray[index][0]}</div>
+    graph.innerHTML = `<div class="name">${sortedArray[index][0]}</div>
                          <div class="outerBar"><div class="bar" style="width: ${
                            percentage + 10
                          }%;"">${percentage}%</div></div>
